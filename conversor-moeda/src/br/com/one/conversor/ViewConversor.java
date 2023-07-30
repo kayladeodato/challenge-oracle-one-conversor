@@ -28,6 +28,7 @@ import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class ViewConversor {
@@ -105,23 +106,27 @@ public class ViewConversor {
 			public void actionPerformed(ActionEvent e) {
 				ConversorMoeda conversorMoeda = new ConversorMoeda();
 
-				String valorFormatado = txtValorConverter.getText().replace(',','.');
+				String valorFormatado = txtValorConverter.getText();
+				NumberFormat format = NumberFormat.getInstance();
 
-				Double valorTotal = Double.parseDouble(valorFormatado);
-				String moedaOrigem = txtDeMoeda.getSelectedItem().toString();
-				String moedaDestino = txtParaMoeda.getSelectedItem().toString();
-				
 				try {
+					Number parsedNumber = format.parse(valorFormatado);
+					Double valorTotal = parsedNumber.doubleValue();
+
+					String moedaOrigem = txtDeMoeda.getSelectedItem().toString();
+					String moedaDestino = txtParaMoeda.getSelectedItem().toString();
 					JOptionPane.showMessageDialog(null, "O valor convertido de " + moedaOrigem +
 							" para " + moedaDestino + " é: "+ conversorMoeda.converterMoedas(valorTotal, moedaOrigem, moedaDestino));
-				}
-				catch(Exception ex) {
+
+				} catch (ParseException ex) {
+					ex.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Valor inválido. Certifique-se de digitar um número válido.");
+				} catch(Exception ex) {
 					ex.printStackTrace();
 					JOptionPane.showMessageDialog(null, "Dados inválidos para conversão.");
 				}
-				
-				
-				
+
+
 			}
 		});
 		btnConverterMoeda.setBounds(76, 227, 117, 23);

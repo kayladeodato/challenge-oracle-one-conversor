@@ -34,7 +34,7 @@ public class ConversorTemperatura {
             return String.format("%.2f", temperaturaConvertida);
 
         } else {
-            return "";
+            return String.format("%.2f", temperatura);
         }
     }
 
