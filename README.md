@@ -19,7 +19,7 @@ Lembrando que deve ser possível também converter de forma inversa, ou seja:
 
 ## Tecnologias e Ferramentas ⚙️
 
-**Linguagem:** Java (<i>versão: 17</i>)
+**Linguagem:** Java (<i>versão: 17</i>)</br>
 **API:** Java Swing
 </p>
 
@@ -33,5 +33,4 @@ Lembrando que deve ser possível também converter de forma inversa, ou seja:
 
 
 ## Próximos passos 👣
-Transformar essa aplicação em uma API em que as cotações podem ser inseridas automaticamente na aplicação. 
-
+Transformar essa aplicação em uma API para que as cotações das moedas possam ser inseridas automaticamente na aplicação a partir de sites econômicos.
