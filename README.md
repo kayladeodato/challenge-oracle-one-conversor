@@ -21,6 +21,9 @@ Lembrando que deve ser possível também converter de forma inversa, ou seja:
 
 **Linguagem:** Java (<i>versão: 17</i>)</br>
 **API:** Java Swing
+**IDE:** Eclipse
+**Plug-in:** WindowBuilder
+
 </p>
 
 
