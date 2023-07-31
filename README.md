@@ -20,9 +20,9 @@ Lembrando que deve ser possível também converter de forma inversa, ou seja:
 ## Tecnologias e Ferramentas ⚙️
 
 **Linguagem:** Java (<i>versão: 17</i>)</br>
-**API:** Java Swing
-**IDE:** Eclipse
-**Plug-in:** WindowBuilder
+**API:** Java Swing</br>
+**IDE:** Eclipse</br>
+**Plug-in:** WindowBuilder</br>
 
 </p>
 
