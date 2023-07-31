@@ -171,6 +171,10 @@ public class ViewConversor {
 
 				ConversorTemperatura conversorTemperatura = new ConversorTemperatura();
 
+				if (txtValorConverter== null) {
+					Double valor = Double.parseDouble(String.valueOf(txtValorConverter));
+				}
+
 				String temperaturaFormatada = txtValorConverter.getText().replace(',','.');
 
 				Double temperatura = Double.parseDouble(temperaturaFormatada);
@@ -178,7 +182,7 @@ public class ViewConversor {
 				String temperaturaDestino = txtParaTemperatura.getSelectedItem().toString();
 				
 				try {
-					JOptionPane.showMessageDialog(null, "O valor convertido de " + temperaturaOrigem +
+					JOptionPane.showMessageDialog(null, "A temperatura convertida de " + temperaturaOrigem +
 							" para " + temperaturaDestino + " é: "+ conversorTemperatura.converterTemperatura
 							(temperatura, temperaturaOrigem, temperaturaDestino));
 				}
