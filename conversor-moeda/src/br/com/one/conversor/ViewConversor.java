@@ -171,11 +171,7 @@ public class ViewConversor {
 
 				ConversorTemperatura conversorTemperatura = new ConversorTemperatura();
 
-				if (txtValorConverter== null) {
-					Double valor = Double.parseDouble(String.valueOf(txtValorConverter));
-				}
-
-				String temperaturaFormatada = txtValorConverter.getText().replace(',','.');
+				String temperaturaFormatada = txtValorTemperatura.getText().replace(',','.');
 
 				Double temperatura = Double.parseDouble(temperaturaFormatada);
 				String temperaturaOrigem = txtDeTemperatura.getSelectedItem().toString();
@@ -200,22 +196,5 @@ public class ViewConversor {
 		frame.getContentPane().add(btnConverterTemperatura);
 		
 		
-	}
-	private static void addPopup(Component component, final JPopupMenu popup) {
-		component.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			public void mouseReleased(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			private void showMenu(MouseEvent e) {
-				popup.show(e.getComponent(), e.getX(), e.getY());
-			}
-		});
 	}
 }
