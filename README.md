@@ -17,6 +17,8 @@ Lembrando que deve ser possível também converter de forma inversa, ou seja:
         - Converter de Peso argentino a  Reais
         - Converter de Peso Chileno a Reais
 
+Como adicional disponibilizei aos usuários a conversão de outras moedas além da conversão do Real e para o Real.
+
 ## Tecnologias e Ferramentas ⚙️
 
 **Linguagem:** Java (<i>versão: 17</i>)</br>
@@ -27,7 +29,7 @@ Lembrando que deve ser possível também converter de forma inversa, ou seja:
 </p>
 
 
-## Detalhes da aplicação 📋
+## Resultado da aplicação 📋
 
 https://github.com/kayladeodato/challenge-oracle-one-conversor/assets/13575694/60347e3c-fba1-412e-88a4-c240153469f8
 
